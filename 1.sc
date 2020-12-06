@@ -23,7 +23,15 @@ for k v in numbers
     try
         # if this key exists, then we found our complement
         'get numbers (abs v)
-        print (k * (abs v))
+        print "part one:" (k * (abs v))
         break;
     else
         ;
+
+label finish
+    for a v in numbers
+        for b v in numbers
+            for c v in numbers
+                if ((a + b + c) == 2020)
+                    print "part two:" (a * b * c)
+                    merge finish
